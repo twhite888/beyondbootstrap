@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Beyond Bootstrap</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="https://use.fontawesome.com/f30aab425d.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:light" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="collapse"/> 
+        <label for="collapse"></label>
+        <ul>
+            <li><a href="index.html">Home</a></li> 
+            <li> <a href="flexbox.html">Flexbox</a></li>
+            <li> <a href="children.html">Children</a></li>
+            <li><a href="font-awesome.html">Font Awesome</a></li>
+            <li> <a href="resources.html">Resources</a></li>
+        </ul>
+    </nav>
+
+    <h1>Targetting Children</h1>
+    <h2 class="tagline">Striped tables</h2>
+    <p>Pure CSS using nth-child(even)</p>	
+        
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Country</th>
+                <th>Official Name</th>
+                <th>Official Language</th>
+                <th>Capital</th>
+                <th>Currency</th>
+                <th>Population</th>
+                <th>Size/Area</th>
+                <th>Flag</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="Country">Germany</td>
+                <td data-label="Official Name">Federal Republic of Germany</td>
+                <td data-label="Official Language">German</td>
+                <td data-label="Capital">Berlin</td>
+                <td data-label="Currency">Euro</td>
+                <td data-label="Population">80,854,408</td>
+                <td data-label="Size/Area">357,022 sq km</td>
+                <td data-label="Flag"><img src="https://www.cia.gov/library/publications/the-world-factbook/graphics/flags/large/gm-lgflag.gif" height="32"></td>
+            </tr>
+            <tr>
+                <td data-label="Country">Ghana</td>
+                <td data-label="Official Name">Republic of Ghana</td>
+                <td data-label="Official Language">Asante, Ewe, Fante, other</td>
+                <td data-label="Capital">Accra</td>
+                <td data-label="Currency">Ghana cedi</td>
+                <td data-label="Population">26,327,649</td>
+                <td data-label="Size/Area">238,533 sq km</td>
+                <td data-label="Flag"><img src="https://www.cia.gov/library/publications/the-world-factbook/graphics/flags/large/gh-lgflag.gif" height="32"></td>
+            </tr>
+            <tr>
+                <td data-label="Country">Greece</td>
+                <td data-label="Official Name">Hellenic Republic</td>
+                <td data-label="Official Language">Greek</td>
+                <td data-label="Capital">Athens</td>
+                <td data-label="Currency">Euro</td>
+                <td data-label="Population">10,775,643</td>
+                <td data-label="Size/Area">131,957 sq km</td>
+                <td data-label="Flag"><img src="https://www.cia.gov/library/publications/the-world-factbook/graphics/flags/large/gr-lgflag.gif" height="32"></td>
+            </tr>
+            <tr>
+                <td data-label="Country">Greenland</td>
+                <td data-label="Official Name">Greenland</td>
+                <td data-label="Official Language">Greenlandic, Danish, English</td>
+                <td data-label="Capital">Nuuk</td>
+                <td data-label="Currency">Danish krone</td>
+                <td data-label="Population">57,733</td>
+                <td data-label="Size/Area">2,166,086 sq km</td>
+                <td data-label="Flag"><img src="https://www.cia.gov/library/publications/the-world-factbook/graphics/flags/large/gl-lgflag.gif" height="32"></td>
+            </tr>
+            <tr>
+                <td data-label="Country">Guatemala</td>
+                <td data-label="Official Name">Republic of Guatemala</td>
+                <td data-label="Official Language">Spanish</td>
+                <td data-label="Capital">Guatemala City</td>
+                <td data-label="Currency">Quetzal</td>
+                <td data-label="Population">14,918,999</td>
+                <td data-label="Size/Area">108,889 sq km</td>
+                <td data-label="Flag"><img src="https://www.cia.gov/library/publications/the-world-factbook/graphics/flags/large/gt-lgflag.gif" height="32"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <footer>
+        <p><i class="fa fa-twitter"></i>TejayWhite</p>
+    </footer>
+</body>
+</html>

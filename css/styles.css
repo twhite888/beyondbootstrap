@@ -1,0 +1,376 @@
+/* 
+ Author: Tejay White @tejaywhite
+ May 2017
+-------------------------------------- */
+* {
+  margin:0;
+  padding:0;
+  text-align:center;
+  color:#fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+}
+
+strong{
+  font-weight: 700;
+}
+
+body:before, body:after {
+    content: "";
+    position: fixed;
+    background: #303233; /*#ff3300;*/
+    left: 0;
+    right: 0;
+    height: 10px;
+}
+body:before {
+    top: 0;
+}
+body:after {
+    bottom: 0;
+}
+body {
+    border-left: 10px solid #303233; /*#ff3300;*/
+    border-right: 10px solid #302233; /*#ff3300;  */
+    margin:0;
+    background: #000;
+    padding:20px;
+}
+
+
+.fa{
+  color:#fff;
+  margin-right: 2px;
+}
+
+.fa-twitter{
+  margin-right:8px;
+}
+
+ul li{
+  list-style-type: none;
+}
+
+ol{
+  margin:0 auto;
+  width:auto;
+}
+
+ol li ul {
+  margin:0.6em 0 0.5em 1.2em;
+}
+ol li ul li {
+  list-style-type: disc;
+}
+
+table{
+  background:#fff;
+  margin:0 auto;
+   border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th{
+  background: #e00000;
+  padding:25px 10px;
+  font-weight: 700;
+}
+
+tbody tr:nth-child(even) {
+  background: #efefef;
+  color:#000;
+}
+
+td{
+  color: #000;
+  border:0;
+  padding:10px;
+}
+a{
+  text-decoration: none;
+}
+
+p a {
+  font-weight: 700;
+}
+
+p a:hover {
+  font-weight: normal;
+}
+
+/* new version of micro clearfix hack */
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer{
+    height: 60px;
+    background: black;
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    left: 10px;
+    text-align: right;
+    color:#fff;
+    vertical-align: middle;
+}
+
+footer p{
+  text-align: right;
+  margin:15px 30px;
+}
+
+
+/* VERTICAL RHYTHMS
+---------------------------------------*/
+h1 {
+  font-size: 4em;
+  /* 36 / 16 */
+  line-height: 1.333333333333333em;  /* 48 / 36 */
+  margin-bottom:  0.5em; /* .6666666666666667em;   24 / 36 */ 
+  letter-spacing: 2px;
+}
+
+h2{
+  font-size: 2.25em;
+  /* 24 / 16 */
+  line-height: 1em;
+  /* 24 / 24 */
+  margin-bottom: 1em;
+  /* 24 / 24 */
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-size: 1.3125em;
+  /* 21 / 16 */
+  line-height: 1.142857142857143em;
+  /* 24 / 21 */
+  margin-bottom: 1.142857142857143em;
+  /* 24 / 21 */
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h4 {
+  font-size: 1.125em;
+  /* 18 / 16 */
+  line-height: 1.333333333333333em;
+  /* 24 / 18 */
+  margin-bottom: 1.333333333333333em;
+  /* 24 / 18 */
+}
+
+h5, h6, p{
+  font-size: 1em;
+  /* 16 / 16 */
+  line-height: 1.5em;
+  /* 24 / 16 */
+  margin-bottom: 1.5em;
+  /* 24 / 16 */
+}
+
+ol li, ol li ul li{
+  font-size: 1em;
+  /* 16 / 16 */
+  line-height: 1.5em;
+  /* 24 / 16 */
+  margin-bottom: 1em;
+  /* 24 / 16 */
+  text-align: left;
+
+}
+
+/* Flexbox
+-----------------------------------------*/
+
+.flex-container {
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.nowrap  { 
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+.wrap    { 
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}   
+
+.flex-start { 
+  -webkit-justify-content: flex-start; 
+  justify-content: flex-start; 
+}
+
+.flex-end { 
+  -webkit-justify-content: flex-end; 
+  justify-content: flex-end; 
+}  
+
+.center { 
+  -webkit-justify-content: center; 
+  justify-content: center; 
+}  
+
+.space-between { 
+  -webkit-justify-content: space-between; 
+  justify-content: space-between; 
+}  
+
+.space-around { 
+  -webkit-justify-content: space-around; 
+  justify-content: space-around; 
+}
+
+.flex-item {
+  
+  margin: 8px;
+  width:auto;
+  border: 5px solid #fff;
+ }
+
+
+
+/* Menu Collapse (adapted from http://codepen.io/joaorafaelm/pen/pbjfi)
+-----------------------------------------*/
+
+nav ul{
+  width:200px;
+  margin:0 auto;
+}
+nav ul li{
+  display:none; 
+  padding:5px;  
+  border-top:1px solid rgba(255,255,255,.1);  
+  transition:all .5s;
+  opacity:0;
+}
+nav ul li:hover{
+  border-bottom:1px solid #fff;
+}
+nav ul li:last-child{
+ margin-bottom: 20px;
+}
+nav li a {
+  color: #fff;
+  text-decoration: none; 
+  margin-bottom: .6666666666666667em;   /* 24 / 36 */ 
+}
+label:before{
+  height:2px;
+  width:20px;
+  background:#fff;
+  display:inline-block;
+  content:"";
+  box-shadow:0px -5px 0px 0px  #fff,
+             0px -10px 0px 0px #fff;
+  margin-left:10px;
+  transition:all .5s;
+  position:relative;
+  opacity:1;
+}
+label{
+  display:block;  
+  //padding:10px;
+  color:white;  
+  cursor:pointer; 
+  margin-bottom:10px;
+}
+
+input[type="checkbox"]{
+  visibility:hidden;
+  position:absolute;
+}
+
+#collapse:checked ~ ul li{  
+  margin-top:0;
+  opacity:1;
+  display: block;
+  width:200px; 
+}
+#collapse:checked + label:before{
+//  position:relative;
+  //right:calc(-160px);
+//  opacity:0.5;
+  
+}
+
+/* Menu full
+-----------------------------------------*/
+
+@media screen and (min-width: 600px) {
+  body{
+    padding:80px 50px 50px;
+  }
+  label{
+    display: none;
+  }
+  nav {
+  
+  padding: 0;
+  position: fixed;
+  background: black;
+      left: 10px;
+    top: 10px;
+   
+    right: 10px;
+}
+nav ul{
+  width:auto;
+  margin:0 0 0 20px;
+  text-align: left;
+}
+
+nav ul li{
+  display: inline-block;
+  padding:20px 10px 10px;
+  opacity: 1;
+
+}
+
+nav ul li:last-child {
+    margin-bottom: 0;
+}
+
+ol{
+  margin:0 auto;
+  width:550px;
+}
+
+
+}
+
+/* Menu different colours (see https://css-tricks.com/useful-nth-child-recipies/ for more examples)
+-----------------------------------------*/
+
+/*nav ul li:nth-child(1) {
+  background: red;  
+}
+
+nav ul li:nth-child(2) {
+  background: orange;  
+}
+
+nav ul li:nth-child(3) {
+  background: yellow;  
+}
+nav ul li:nth-child(4) {
+  background: green;  
+}*/
+
+
+
+
+
+
+

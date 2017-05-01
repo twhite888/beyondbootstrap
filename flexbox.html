@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Beyond Bootstrap</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="https://use.fontawesome.com/f30aab425d.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:light" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="collapse"/> 
+        <label for="collapse"></label>
+        <ul>
+            <li><a href="index.html">Home</a></li> 
+            <li> <a href="flexbox.html">Flexbox</a></li>
+            <li> <a href="children.html">Children</a></li>
+            <li><a href="font-awesome.html">Font Awesome</a></li>
+            <li> <a href="resources.html">Resources</a></li>
+        </ul>
+    </nav>
+
+    <h1>Flexbox</h1>
+    <h2>Responsive Image Gallery</h2>
+    <p>No media queries or javascript needed</p>
+	
+	<ul class="flex-container center wrap">   <!-- flex-start flex-end center space-between space-around -->  
+        <li class="flex-item">
+            <a href="full/sliders2.jpg" data-imagelightbox="f" class="img-frame" title="slider images for Stan James">  
+                <img src="thumb/sliders2.jpg" alt="slider images for Stan James">  
+            </a>   
+        </li>  
+        <li class="flex-item">
+            <a href="full/batman.jpg" data-imagelightbox="f" class="img-frame" title="Page from Stan James casino website"> 
+               <img src="thumb/batman.jpg" alt="Page from Stan James casino website">
+            </a>   
+        </li>
+        <li class="flex-item">
+            <a href="full/banner-small.jpg" data-imagelightbox="f" class="img-frame" title="Stan James CTAs and adverts">       
+                <img src="thumb/banner-small.jpg" alt="Stan James CTAs and adverts">    
+            </a>  
+        </li>
+         <li class="flex-item">
+            <a href="full/stanjamesaffiliates.jpg" data-imagelightbox="f" class="img-frame" title="Stan James Affiliates website">  
+               <img src="thumb/stanjamesaffiliates.jpg" alt="Stan James Affiliates website">
+            </a>   
+        </li>
+        <li class="flex-item">
+            <a href="full/nhsmenu.jpg" data-imagelightbox="f" class="img-frame"  title="Menu page from an NHS Leadership Programme learning activity">
+                <img src="thumb/nhsmenu.jpg"  alt="Menu page from an NHS Leadership Programme learning activity">
+            </a>   
+        </li> 
+        <li class="flex-item">
+            <a href="full/ba.jpg" data-imagelightbox="f" class="img-frame" title="Page from a British Airways learning module">
+                <img src="thumb/ba400.jpg" alt="Page from a British Airways learning module">
+            </a>   
+        </li>
+    </ul>
+        
+  
+    <footer>
+        <p><i class="fa fa-twitter"></i>TejayWhite</p>
+    </footer>
+</body>
+</html>
