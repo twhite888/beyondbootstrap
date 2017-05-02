@@ -1,7 +1,7 @@
 /* 
  Author: Tejay White @tejaywhite
  May 2017
--------------------------------------- */
+-------------------------------------------------- */
 * {
   margin:0;
   padding:0;
@@ -16,7 +16,13 @@ body {
     padding:20px;
 }
 
-/* This puts a border round the page */
+/*.flexboxpg img{
+  width:200px;
+  height:125px;
+}*/
+
+/* This puts a border round the page 
+---------------------------------------------------*/
 #top, #bottom, #left, #right {
   background: #555d60;
   position: fixed;
@@ -36,7 +42,22 @@ body {
 #bottom { bottom: 0; }
 
 
-/* Set the colour and spacing of Font Awesome icons */
+footer{
+    height: 60px;
+    background: #000;
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    left: 10px;
+    text-align: right;
+    color:#fff;
+    vertical-align: middle;
+}
+
+
+/* Set the colour and spacing of Font Awesome icons 
+----------------------------------------------------*/
+
 .fa{
   color:#fff;
   margin-right: 2px;
@@ -48,23 +69,7 @@ body {
 
 
 /* Font styles
-------------------------------*/
-
-ul li{
-  list-style-type: none;
-}
-
-ol{
-  margin:0 auto;
-  width:auto;
-}
-
-ol li ul {
-  margin:0.6em 0 0.5em 1.2em;
-}
-ol li ul li {
-  list-style-type: disc;
-}
+-------------------------------------------------*/
 
 .home h1{
   margin-top: 100px;
@@ -86,54 +91,8 @@ p a:link, p a:visited, li a:link, li a:visited  {
   font-weight: 700;
 }
 
-p a:hover, p a:active, li a:hover, li a:active {
-  font-weight: normal;
-}
-
-
-/* Table styles
-------------------------------*/
-table{
-  background:#fff;
-  margin:0 auto;
-   border-collapse: collapse;
-    border-spacing: 0;
-}
-
-th{
-  background: #e00000;
-  padding:25px 10px;
-  font-weight: 700;
-}
-
-tbody tr:nth-child(even) {
-  background: #efefef;
-  color:#000;
-}
-
-td{
-  color: #000;
-  border:0;
-  padding:10px;
-}
-
-/* new version of micro clearfix hack */
-.group:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-footer{
-    height: 60px;
-    background: black;
-    position: fixed;
-    bottom: 0;
-    right: 10px;
-    left: 10px;
-    text-align: right;
-    color:#fff;
-    vertical-align: middle;
+p a:hover, p a:active, footer p a:link, p a:visited, li a:hover, li a:active, nav li a:link, nav li a:visited {
+  font-weight: 400;
 }
 
 footer p{
@@ -141,9 +100,24 @@ footer p{
   margin:15px 30px;
 }
 
+ul li{
+  list-style-type: none;
+}
+
+ol{
+  margin:0 auto;
+  width:auto;
+}
+
+ol li ul {
+  margin:0.6em 0 0.5em 1.2em;
+}
+ol li ul li {
+  list-style-type: disc;
+}
 
 /* VERTICAL RHYTHMS
----------------------------------------*/
+-------------------------------------------------------*/
 h1 {
   font-size: 4em;
   /* 36 / 16 */
@@ -200,11 +174,44 @@ ol li, ol li ul li{
   margin-bottom: 1em;
   /* 24 / 16 */
   text-align: left;
-
 }
 
+/* Table styles
+------------------------------------------------------*/
+table{
+  background:#fff;
+  margin:0 auto;
+   border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th{
+  background: #e00000;
+  padding:25px 10px;
+  font-weight: 700;
+}
+
+tbody tr:nth-child(even) {
+  background: #efefef;
+  color:#000;
+}
+
+td{
+  color: #000;
+  border:0;
+  padding:10px;
+}
+
+/* new version of micro clearfix hack */
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
 /* Flexbox 
------------------------------------------*/
+-----------------------------------------------------*/
 
 .flex-container {
   -ms-box-orient: horizontal;
@@ -260,7 +267,7 @@ ol li, ol li ul li{
 
 
 /* Menu Collapse (adapted from http://codepen.io/joaorafaelm/pen/pbjfi)
------------------------------------------*/
+-------------------------------------------------------------------------*/
 
 nav ul{
   width:200px;
@@ -297,6 +304,7 @@ label:before{
   position:relative;
   opacity:1;
 }
+
 label{
   display:block;  
   //padding:10px;
@@ -319,17 +327,18 @@ input[type="checkbox"]{
 
 
 /* Menu full and fullscreen styles
------------------------------------------*/
+--------------------------------------------------------*/
 
 @media screen and (min-width: 600px) {
   body{
     padding:80px 50px 50px;
   }
+
   label{
     display: none;
   }
-  nav {
-  
+
+  nav {  
   padding: 0;
   position: fixed;
   background: black;
@@ -337,37 +346,37 @@ input[type="checkbox"]{
     top: 10px;
    
     right: 10px;
-}
-nav ul{
-  width:auto;
-  margin:0 0 0 20px;
-  text-align: left;
+  }
+
+  nav ul{
+    width:auto;
+    margin:0 0 0 20px;
+    text-align: left;
+  }
+
+  nav ul li{
+    display: inline-block;
+    padding:20px 10px 10px;
+    opacity: 1;
+  }
+
+  nav ul li:hover, nav ul li.selected{
+    border-bottom:1px solid #fff;
+  }
+
+  nav ul li:last-child {
+      margin-bottom: 0;
+  }
+
+  ol{
+    margin:0 auto;
+    width:550px;
+  }
 }
 
-nav ul li{
-  display: inline-block;
-  padding:20px 10px 10px;
-  opacity: 1;
-}
-
-nav ul li:hover, nav ul li.selected{
-  border-bottom:1px solid #fff;
-}
-
-nav ul li:last-child {
-    margin-bottom: 0;
-}
-
-ol{
-  margin:0 auto;
-  width:550px;
-}
-
-
-}
-
-/* Menu different colours (see https://css-tricks.com/useful-nth-child-recipies/ for more examples)
------------------------------------------*/
+/* Menu different colours 
+(see https://css-tricks.com/useful-nth-child-recipies/ for more examples)
+--------------------------------------------------------------------------*/
 
 /*nav ul li:nth-child(1) {
   background: red;  
