@@ -1,0 +1,56 @@
+
+html {	
+	background: url("../images/northernlights.jpg") no-repeat center center fixed;
+	background-size: cover;
+}
+
+
+body{
+	font-family: 'Raleway', sans-serif;
+	color: #fff;
+}
+
+
+header{
+	margin:50px auto;
+	text-align: center;
+	background: rgba(0,0,0,0.4);
+	padding: 40px;
+	width: 30%;
+  }
+
+
+h1{
+	margin:0;
+	font-size: 70px;
+	font-family: 'Lobster', cursive;
+	font-weight: normal;
+	
+}
+
+h2{
+	font-weight: normal;
+}
+
+.go{
+	text-align: center;
+	padding-left: 20px;
+}
+
+.twitter{
+	margin:0 auto;
+	text-align: center;
+}
+
+footer{
+	position: fixed;
+	bottom: 10px;
+}
+
+.social{
+	margin-right: 10px;
+}
+
+
+
+
