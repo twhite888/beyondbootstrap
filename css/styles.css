@@ -12,10 +12,6 @@ body {
   	font-family: 'Raleway', sans-serif;
 }
 
-/*.flexboxpg img{
-  width:200px;
-  height:125px;
-}*/
 
 /* This puts a border round the page 
 ---------------------------------------------------*/
@@ -77,6 +73,10 @@ h1, h2, h3{
 
 p {
   font-weight: 400;
+}
+
+p.addon{
+  margin-top: 40px;
 }
 
 a{
@@ -259,8 +259,16 @@ td{
 .flex-item {  
   margin: 8px;
   width:auto;
-  border: 5px solid #fff;
+  
  }
+
+ .flex-item img{
+  border: 5px solid #fff;
+  width:200px;
+  height:125px;
+ }
+
+
 
 
 
